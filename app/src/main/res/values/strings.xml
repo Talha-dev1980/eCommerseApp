@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CommerseApp</string>
+    <string name="find_your_suitable_watch_now">find your suitable\nwatch now.</string>
+    <string name="smart_watch">Smart Watch</string>
+    <string name="Casio">Casio</string>
+    <string name="tisto">Tisto</string>
+    <string name="silko">Silko</string>
+    <string name="apple_watch">Apple Watch</string>
+</resources>

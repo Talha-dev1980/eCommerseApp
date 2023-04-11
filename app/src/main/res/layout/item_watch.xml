@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintWidth_percent="0.3"
+    android:layout_margin="10dp"
+    android:background="@drawable/watch_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/watch"
+        android:id="@+id/watchImage"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintWidth_percent="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/apple_watch"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/watchImage"
+        app:layout_constraintTop_toBottomOf="@+id/watchImage" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:text="@string/apple_watch"
+        android:textColor="@color/gray"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/titleWatch"
+        app:layout_constraintStart_toStartOf="@id/watchImage"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/watchPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="$123"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="10dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/subTitle"
+        app:layout_constraintStart_toStartOf="@id/watchImage"
+        android:textStyle="bold"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
